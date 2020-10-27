@@ -1,0 +1,100 @@
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "bootstrap.css";
+@import "bootstrap-grid.css";
+@import "bootstrap-reboot.css";
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
+
+body{
+  position: relative;
+}
+header{
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  top: -50px;
+  @media screen and (max-width: 400px){
+    top: 0;
+    img{
+      width: 100%;
+    }
+
+  }
+  .navbar{
+    background-color: black !important;
+  }
+  .navbar-brand{
+    margin-right: 0;
+    position: relative;
+    top: 38px;
+
+  }
+  .nav-item{
+    margin-left: 30px;
+    a{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &:after, &:before{
+      display: block;
+      width: 30px;
+      height: 2px;
+      content: "";
+      position: relative;
+      left: 50%;
+      margin-left: -15px;
+    }
+    &:hover{
+      transition: 1s;
+      &:after, &:before{
+        background-color: #ff0036;
+      }
+    }
+  }
+}
+.FirstScreen{
+  height: 100vh;
+  background-image: url("../Images/firstScreenBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    display: block;
+    margin-bottom: 46px;
+    span{
+      color: #ff0036;
+    }
+  }
+  p{
+    font-size: 16px;
+    color: white;
+    line-height: 23px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    margin-bottom: 70px;
+    }
+ .firstScreenButtons{
+   a{
+     width: 100%;
+     background-color: black;
+     color: white;
+     padding: 17px 15px;
+     display: block;
+     margin-bottom: 20px;
+     &:hover{
+       background-color: #ff0036;
+       text-decoration: none;
+       transform: scale(1.1);
+       transition: 0.8s;
+       border-radius: 8px;
+     }
+   }
+
+}}
